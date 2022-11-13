@@ -13,15 +13,16 @@ public class ReverLinkedList206 {
 //                head =next;
 //        }
 //        System.out.println(reverse);
-        ListNode curr = head;
         ListNode pre = null;
+        ListNode curr = head;
         while (curr != null){
             ListNode next = curr.next;
             curr.next = pre;
             pre = curr;
             curr = next;
         }
-        System.out.print(pre);
+        System.out.println(pre);
+
     }
 
 }
